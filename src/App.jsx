@@ -7,6 +7,7 @@ import Error from "./Components/Error";
 import CommonLayout from "./Components/CommonLayout";
 import Home from "./Components/Home";
 import Download from "./Components/Download";
+import TeamMemberPage from "./Components/TeamMemberPage";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
         <Route path='/team' element={<Team/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
         <Route path='/download' element={<Download/>}></Route>
+        <Route path='/team/:name' element={<TeamMemberPage/>}></Route>
         <Route path='*' element={<Error/>}></Route></Route>
       </Routes>
     </BrowserRouter>
